@@ -189,24 +189,31 @@ class App extends Component {
 </div>
 
       <div className="row w-100 h-50">
-            <div className="change card mx-3 my-2 px-2 py-4 text-center col-sm bg-light rounded">
-            {this.state.twenties}
+            <div className="card mx-3 my-2 px-2 py-4 text-center col-sm bg-light rounded">Twenties
+            <p className="change">{this.state.twenties}</p>
             </div>
-            <div className="change card mx-3 my-2 px-2 py-4 text-center col-sm bg-light rounded">
-            {this.state.tens}</div>
-            <div className="change card mx-3 my-2 px-2 py-4 text-center col-sm bg-light rounded">
-            {this.state.fives}</div>
-            <div className="change card mx-3 my-2 px-2 py-4 text-center col-sm bg-light rounded">
-            {this.state.ones}</div>
+            <div className="card mx-3 my-2 px-2 py-4 text-center col-sm bg-light rounded">Tens
+            <p className="change">{this.state.tens}</p>
+            </div>
+            <div className="card mx-3 my-2 px-2 py-4 text-center col-sm bg-light rounded">Fives
+            <p className="change">{this.state.fives}</p>
+            </div>
+            <div className="card mx-3 my-2 px-2 py-4 text-center col-sm bg-light rounded">Ones
+            <p className="change">{this.state.ones}</p>
+            </div>
             <div className="row w-100 h-50"></div>
-            <div className="change card mx-3 my-2 px-2 py-4 text-center col-sm bg-light rounded">
-            {this.state.quarters}</div>
-            <div className="change card mx-3 my-2 px-2 py-4 text-center col-sm bg-light rounded">
-            {this.state.dimes}</div>
-            <div className="change card mx-3 my-2 px-2 py-4 text-center col-sm bg-light rounded">
-            {this.state.nickels}</div>
-            <div className="change card mx-3 my-2 px-2 py-4 text-center col-sm bg-light rounded">
-            {this.state.pennies}</div>
+            <div className="card mx-3 my-2 px-2 py-4 text-center col-sm bg-light rounded">Quarters
+            <p className="change">{this.state.quarters}</p>
+            </div>
+            <div className="card mx-3 my-2 px-2 py-4 text-center col-sm bg-light rounded">Dimes
+            <p className="change">{this.state.dimes}</p>
+            </div>
+            <div className="card mx-3 my-2 px-2 py-4 text-center col-sm bg-light rounded">Nickels
+            <p className="change">{this.state.nickels}</p>
+            </div>
+            <div className="card mx-3 my-2 px-2 py-4 text-center col-sm bg-light rounded">Pennies
+            <p className="change">{this.state.pennies}</p>
+            </div>
 
             </div>
 
