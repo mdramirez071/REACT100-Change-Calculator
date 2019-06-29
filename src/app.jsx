@@ -116,7 +116,7 @@ class App extends Component {
       changeDue = changeDue%1;
      //store the amount of pennies into an array then return that array index
      array.push(pennies);
-    }    
+    }  
     return array;
    }
 
@@ -126,6 +126,7 @@ class App extends Component {
     console.log(result);
     let returnChange = this.state.amountReceived - this.state.amountDue;
     returnChange = returnChange.toFixed(2);
+    
     this.setState(
       {
       twenties: result[0],
@@ -184,28 +185,28 @@ class App extends Component {
 </div></div>
 
 <div className="alert alert-danger">
-  <strong>Danger! Incorrect Amount of Change!</strong> You should <a href="#" className="alert-link">Read This Message</a>.
+  <strong>Danger!</strong> You should <a href="#" className="alert-link">Read This Message</a>.
 </div>
 
       <div className="row w-100 h-50">
-            <div className="card mx-3 my-2 px-2 py-4 text-center col-sm bg-light rounded">Twenties
-            <p>{this.state.twenties}</p>
+            <div className="change card mx-3 my-2 px-2 py-4 text-center col-sm bg-light rounded">
+            {this.state.twenties}
             </div>
-            <div className="card mx-3 my-2 px-2 py-4 text-center col-sm bg-light rounded">Tens
-            <p>{this.state.tens}</p></div>
-            <div className="card mx-3 my-2 px-2 py-4 text-center col-sm bg-light rounded">Fives
-            <p>{this.state.fives}</p></div>
-            <div className="card mx-3 my-2 px-2 py-4 text-center col-sm bg-light rounded">Ones
-            <p>{this.state.ones}</p></div>
+            <div className="change card mx-3 my-2 px-2 py-4 text-center col-sm bg-light rounded">
+            {this.state.tens}</div>
+            <div className="change card mx-3 my-2 px-2 py-4 text-center col-sm bg-light rounded">
+            {this.state.fives}</div>
+            <div className="change card mx-3 my-2 px-2 py-4 text-center col-sm bg-light rounded">
+            {this.state.ones}</div>
             <div className="row w-100 h-50"></div>
-            <div className="card mx-3 my-2 px-2 py-4 text-center col-sm bg-light rounded">Quarters
-            <p>{this.state.quarters}</p></div>
-            <div className="card mx-3 my-2 px-2 py-4 text-center col-sm bg-light rounded">Dimes
-            <p>{this.state.dimes}</p></div>
-            <div className="card mx-3 my-2 px-2 py-4 text-center col-sm bg-light rounded">Nickels
-            <p>{this.state.nickels}</p></div>
-            <div className="card mx-3 my-2 px-2 py-4 text-center col-sm bg-light rounded">Pennies
-            <p>{this.state.pennies}</p></div>
+            <div className="change card mx-3 my-2 px-2 py-4 text-center col-sm bg-light rounded">
+            {this.state.quarters}</div>
+            <div className="change card mx-3 my-2 px-2 py-4 text-center col-sm bg-light rounded">
+            {this.state.dimes}</div>
+            <div className="change card mx-3 my-2 px-2 py-4 text-center col-sm bg-light rounded">
+            {this.state.nickels}</div>
+            <div className="change card mx-3 my-2 px-2 py-4 text-center col-sm bg-light rounded">
+            {this.state.pennies}</div>
 
             </div>
 
