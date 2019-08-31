@@ -64,7 +64,7 @@ describe('express', function() {
     .wait('div.alert.alert-success')
     .evaluate(() => document.querySelector('div.alert.alert-success').innerText)
     .end()
-    .then(el => expect(el).to.equal('The total change due is $6.99'))
+    .then(el => expect(el).to.equal('The total change due is $6.99\n'))
   );
 
   it('should calculate individual change correctly', () =>
