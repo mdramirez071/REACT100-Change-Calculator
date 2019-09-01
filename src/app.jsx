@@ -90,7 +90,7 @@ class App extends Component {
   }
 
   handleClick(e) {
-  //Prevents the Reset to Default State
+  //Prevents State from Resetting to Default
   e.preventDefault();
   var result = this.calculate();
   
@@ -137,58 +137,57 @@ class App extends Component {
         <div className="row">
           <div className="col-sm-6">
             <div className="card">
-            <div className="card-header">Enter Information</div>
-            <div className="card-body"><h5 className="card-title"></h5>
-            <label htmlFor="amountDue">How much is due?</label>
-            <input type="number" value={this.state.amountDue} onChange={this.onChange} name="amountDue" className="form-control" id="amountDue" placeholder="Amount Due"></input>
-            <label htmlFor="amountReceived">How much was received?</label>
-            <input type="number" value={this.state.amountReceived} onChange={this.onChange} name="amountReceived" className="form-control" id="amountReceived" placeholder="Amount Received"></input>
-            </div>
-            <div className="card-footer">
-            <button className="btn btn-block btn-round btn-primary btn-outline-primary" name="calculate" id="calculate" onClick={this.handleClick}>Calculate</button>
-            </div> 
-            </div>
-          </div>
+              <div className="card-header">Enter Information</div>
+                <div className="card-body">
+                  <h5 className="card-title"></h5>
+                  <label htmlFor="amountDue">How much is due?</label>
+                    <input type="number" value={this.state.amountDue} onChange={this.onChange} name="amountDue" className="form-control" id="amountDue" placeholder="Amount Due"></input>
+                  <label htmlFor="amountReceived">How much was received?</label>
+                    <input type="number" value={this.state.amountReceived} onChange={this.onChange} name="amountReceived" className="form-control" id="amountReceived" placeholder="Amount Received"></input>
+                  </div>
+                  <div className="card-footer">
+                    <button className="btn btn-block btn-round btn-primary btn-outline-primary" name="calculate" id="calculate" onClick={this.handleClick}>Calculate</button>
+                  </div> 
+                </div>
+              </div>
             <div className="col-sm-6">
               <div className="card">
-              <div className="card-body">
-              <div className="card mx-3 my-2 px-2 py-4 text-center col-sm bg-light rounded">
-              <div className={this.state.alert}>
-              <strong>{this.state.output}</strong>
-              </div>
-                <div className="row w-100 h-50">
-                    <div className="card mx-3 my-2 px-2 py-4 text-center col-sm bg-light rounded">Twenties
-                    <p className="change">{this.state.twenties}</p>
-                    </div>
-                    <div className="card mx-3 my-2 px-2 py-4 text-center col-sm bg-light rounded">Tens
-                    <p className="change">{this.state.tens}</p>
-                    </div>
-                    <div className="card mx-3 my-2 px-2 py-4 text-center col-sm bg-light rounded">Fives
-                    <p className="change">{this.state.fives}</p>
-                    </div>
-                    <div className="card mx-3 my-2 px-2 py-4 text-center col-sm bg-light rounded">Ones
-                    <p className="change">{this.state.ones}</p>
-                    </div>
-                    <div className="row w-100 h-50"></div>
-                    <div className="card mx-3 my-2 px-2 py-4 text-center col-sm bg-light rounded">Quarters
-                    <p className="change">{this.state.quarters}</p>
-                    </div>
-                    <div className="card mx-3 my-2 px-2 py-4 text-center col-sm bg-light rounded">Dimes
-                    <p className="change">{this.state.dimes}</p>
-                    </div>
-                    <div className="card mx-3 my-2 px-2 py-4 text-center col-sm bg-light rounded">Nickels
-                    <p className="change">{this.state.nickels}</p>
-                    </div>
-                    <div className="card mx-3 my-2 px-2 py-4 text-center col-sm bg-light rounded">Pennies
-                    <p className="change">{this.state.pennies}</p>
+                <div className="card-body">
+                  <div className="card mx-3 my-2 px-2 py-4 text-center col-sm bg-light rounded">
+                    <div className={this.state.alert}><strong>{this.state.output}</strong></div>
+                  <div className="row w-100 h-50">
+                      <div className="card mx-3 my-2 px-2 py-4 text-center col-sm bg-light rounded">Twenties
+                        <p className="change">{this.state.twenties}</p>
+                      </div>
+                      <div className="card mx-3 my-2 px-2 py-4 text-center col-sm bg-light rounded">Tens
+                        <p className="change">{this.state.tens}</p>
+                      </div>
+                      <div className="card mx-3 my-2 px-2 py-4 text-center col-sm bg-light rounded">Fives
+                        <p className="change">{this.state.fives}</p>
+                      </div>
+                      <div className="card mx-3 my-2 px-2 py-4 text-center col-sm bg-light rounded">Ones
+                        <p className="change">{this.state.ones}</p>
+                      </div>
+                      <div className="row w-100 h-50"></div>
+                      <div className="card mx-3 my-2 px-2 py-4 text-center col-sm bg-light rounded">Quarters
+                        <p className="change">{this.state.quarters}</p>
+                      </div>
+                      <div className="card mx-3 my-2 px-2 py-4 text-center col-sm bg-light rounded">Dimes
+                        <p className="change">{this.state.dimes}</p>
+                      </div>
+                      <div className="card mx-3 my-2 px-2 py-4 text-center col-sm bg-light rounded">Nickels
+                        <p className="change">{this.state.nickels}</p>
+                      </div>
+                      <div className="card mx-3 my-2 px-2 py-4 text-center col-sm bg-light rounded">Pennies
+                        <p className="change">{this.state.pennies}</p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div> 
-      </div>
+          </div> 
+        </div>
     );
   }
 }
